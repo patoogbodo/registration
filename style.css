@@ -23,4 +23,56 @@ body{
 
 .title{
   font-size: 25px;
+  font-weight: 600;
+  position: relative;
+}
+
+.title::before{
+  content: '';
+  position: absolute;
+  height: 3px;
+  left: 0;
+  bottom: 0;
+  width: 30px;
+  background:linear-gradient(180deg, purple, rgb(38, 38, 44));
+}
+
+form .user-detials{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin:20px 0 12px 0;
+}
+
+form .user-detials .input-box{
+  width: calc(100% / 2 - 20px);
+  margin-bottom: 15px;
+}
+
+.user-detials .input-box .details{
+   font-weight: 900;
+   margin-bottom: 5px;
+   display: block;
+}
+
+.user-detials .input-box input{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #f0f0f0;
+  padding-left: 15px;
+  font-size: 16px;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+.user-detials .input-box input:focus,
+.user-detials .input-box input:valid{
+   background:rgb(231, 231, 235) ;
+}
+
+.gender-title{
+  font-size: 30px;
+  font-weight: 400;
 }
