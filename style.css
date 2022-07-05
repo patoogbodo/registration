@@ -76,3 +76,79 @@ form .user-detials .input-box{
   font-size: 30px;
   font-weight: 400;
 }
+
+.category{
+  display: flex;
+  width: 80%;
+  margin: 14px 0s;
+  justify-content: space-between;
+}
+
+.gender-detials .category label{
+  display: flex;
+}
+
+.gender-detials .category .dot{
+  height: 18px;
+  width: 18px;
+  background:whitesmoke;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 5px solid transparent;
+  transition: all 0.3s ease;
+}
+
+#dot-1:checked ~ .category label .one,
+#dot-2:checked ~ .category label .two,
+#dot-3:checked ~ .category label .three{
+  border-color: black;
+  background: whitesmoke;
+}
+
+form input[type="radio"]{
+  display: none;
+}
+
+.button{
+  height: 45px;
+  margin: 45px 0;
+}
+
+.button input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  color: #fff;
+  background: linear-gradient(180deg, purple, rgb(38, 38, 44));
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  letter-spacing: 1px;
+  border-radius: 5px;
+}
+
+form .button input:hover{
+  background:linear-gradient(-180deg, purple, rgb(38, 38, 44));
+}
+
+@media (max-width: 548px) {
+  .container {
+    max-width: 100%;
+  }
+   form .user-detials .input-box{
+     margin-bottom: 15px;
+     width: 100%;
+   }
+   form .gender-detials .category{
+    width: 100%;
+   }
+   .containerform .user-detials{
+     max-height: 300px;
+     overflow-y: scroll;
+   }
+   .user-detials::-webkit-scrollbar{
+     width: 0;
+   }
+    
+}
